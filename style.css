@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0);
+    box-shadow: rgb(0 0 0 / 30%) 0px 2px 3px 0px;
+    z-index: 10;
+    height: 1.3rem;
+    padding-right: 2rem;
+    position: relative;
+    top: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.webname {
+    font-size: 0.7rem;
+    padding-left: 3vw;
+}
+nav {
+    width: 30%;
+    cursor: pointer;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 0.4rem;
+    font-weight: 900;
+
+}
+
+li:hover {
+    color:green;
+}
+
+/* HERO SECTION */
+.hero {
+    background-image: url(/pexels-karolina-grabowska-5208871.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    padding-left: 7vw;
+}
+
+.herotext {
+    width: 40%;
+    height: 75%;
+    font-size: 0.6em;
+}
+.herotext h3 {
+    color: green;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.herotext h1 {
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.herotext h2 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0.4rem;
+    animation: typing 3s steps(13), blink .5s step-end infinite alternate;
+    width:6rem;
+    height: 1rem;
+    overflow: hidden;
+    border-right: 2px solid;
+    white-space: no-wrap;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+button {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 12px;
+    border: 1px solid green;
+    color: green;
+    font-size: 0.5rem;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+    left:0.6rem;    
+    text-align: center;
+    padding:0.4rem;
+    cursor: pointer;
+}
+.button1 {
+    margin-right:2vw;
+}
+button:hover {
+    background-color: green;
+    color:white;
+}
+
+/* INTRO SECTION */
+.myintro {
+    padding-top:15vh;
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    padding-bottom: 3vh;
+}
+
+.myintro img {
+    border: 1px solid green;
+}
+
+.myintrocontainer {
+width: 40vw;
+}
+
+.textmyintro {
+    font-size: 0.7rem;
+}
+
+.textmyintro h5 {
+color:green;
+margin-bottom: .7vh;
+font-family: 'Raleway', sans-serif;
+}
+
+.textmyintro h2 {
+font-weight: 900;
+font-family: 'Open Sans', sans-serif;
+font-size: 1.1rem;
+padding-bottom:2vh;
+}
+
+.textmyintro p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .5rem;
+    padding-bottom:6vh;
+    color: gray;
+    }
+
+table {
+ padding-bottom: 3vh;
+}
+
+.textmyintro h4 {
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+td {
+  padding-right: 2vw;
+  padding-left: 5vw;
+}
+
+td:last-child {
+  font-family:  'Raleway', sans-serif;
+  font-size:.6rem;
+}
+.interests h4{
+  padding-bottom: 2vh;
+}
+
+.interests  p{
+    display: inline;
+    padding: 2vw;
+}
+.myintro i {
+  color: green;
+  padding-right: .4rem;
+}
+
+/* WHY CHOOSE ME SECTION */
+
+.whychooseme {
+  margin-top: 8vh;
+padding-top:7vh;
+background-color: beige;
+width: 90%;
+margin-left: 5%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+.whychooseme h5 {
+    color:green;
+    margin-bottom: .7vh;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 30%;
+    font-size: 0.7rem;
+    }
+
+.whychooseme h2 {
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom:2vh;
+    font-size: 1.1rem;
+    }
+
+
+.container {
+        width: 80%;
+        height: 60vh;
+        margin-left: 10%;
+        padding: 1rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight:500;
+        color: black;
+        display: grid;
+        grid-template-columns: 27vw 27vw;
+        grid-template-rows: auto auto auto;
+        gap: 4vw;
+      }
+
+      .skills:not(:last-child) {
+        margin-bottom: 2vw;
+      }
+      .skills.one {
+        grid-column:  1;
+        grid-row: 1;
+      }
+      .skills.two {
+        grid-column:  2;
+        grid-row: 1;
+      }
+      .skills.three {
+        grid-column:  1;
+        grid-row: 2;
+      }
+      .skills.four {
+        grid-column:  2;
+        grid-row: 2;
+      }
+      .skills.five{
+        grid-column:  1 / 3;
+        grid-row: 3;
+        width: 30%;
+        margin: auto;
+      }
+
+      .skills span {
+        font-size: .6rem;
+        font-weight: 900;
+      }
+      .details {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1vh;
+      }
+      .bar {
+        position: relative;
+        border: 2px solid green;
+        border-radius: 20px;
+      }
+      .bar div {
+        position: relative;
+        width: 0;
+        height: 9px;
+        border-radius: 10px;
+        background-color: green;
+      }
+/* HTML BAR */
+      #html-bar {
+        animation: html-fill 2s forwards;
+      }
+      @keyframes html-fill {
+        100% {
+          width: 50%;
+        }
+      }
+
+/* CSS BAR */
+      #css-bar {
+        animation: css-fill 2s forwards;
+      }
+      @keyframes css-fill {
+        100% {
+          width: 65%;
+        }
+      }
+
+/* SASS BAR */
+#sass-bar {
+    animation: sass-fill 2s forwards;
+  }
+  @keyframes sass-fill {
+    100% {
+      width: 30%;
+    }
+  }
+
+/* BOOTSTRAP BAR */
+      #bootstrap-bar {
+        animation: bootstrap-fill 2s forwards;
+      }
+      @keyframes bootstrap-fill {
+        100% {
+          width: 40%;
+        }
+      }
+
+/* JS BAR */
+      #js-bar {
+        animation: js-fill 2s forwards;
+      }
+      @keyframes js-fill {
+        100% {
+          width: 10%;
+        }
+      }
+
+      /* MY QUALIFICATIONS */
+
+      .qualification {
+     display: flex;
+     width: 100%;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding-top: 8vh;
+      }
+
+.qualification h5 {
+    color:green;
+    margin-bottom: .7vh;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7rem;}
+
+.qualification h2 {
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    padding-bottom:10vh;
+    }
+
+.qualification p {
+  font-size: .5rem;
+}
+
+.qualification p:last-child {
+  color:green;
+}
+
+.qualificationcol {
+    display:grid;
+    grid-template-columns: 30vw 30vw;
+    gap: 10vw;
+}
+.circle {
+    height: 2vh;
+    width: 1vw;
+    background-color: green;
+    border-radius: 50%;
+    padding-left: 1.1vw;
+  }
+
+.col {display: flex;
+flex-direction: column;}
+
+.align {
+  display: flex;
+  align-items: flex-end;
+}
+
+.qualification h6 {
+padding-left: 0.2rem;
+}
+.eg {
+    border-left:2px solid green;
+    padding-left: 1vw;;
+    margin-left: .2rem;
+    margin-bottom: 5vh;
+}
+
+.qtitle {
+  display: flex;
+  justify-content: flex-start;
+  gap:2vw;
+  align-items: flex-start;
+  padding-bottom: 4vh;
+}
+.edcard:nth-last-child(5) {
+color: green;
+}
+
+/* PROJECTS */
+.mywork {
+    padding-top: 12vh;
+    padding-bottom:7vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mywork h5 {    
+    color:green;
+    margin-bottom: .7vh;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7rem;}
+
+.mywork h2 {    
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom:9vh;
+    font-size: 1.1rem;}
+.progress {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.mywork img {
+  width: 10vw;
+  animation: jump 1.5s step-end infinite;
+}
+    @keyframes jump{
+      0%{ transform:translateY(0); }
+      20%{ transform:translateY(0); }
+      40%{ transform:translateY(-30px); }
+      50%{ transform:translateY(0); }
+      60%{ transform:translateY(-15px); }
+      80%{ transform:translateY(0); }
+      100%{ transform:translateY(0); }
+      }
+
+/* Footer */
+
+footer {
+  height:20%;
+  width: 100%;
+  bottom:0;
+  background-color: #0b0a1f;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7vh;
+  font-size:.5rem;
+}
