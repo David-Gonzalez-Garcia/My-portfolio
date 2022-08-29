@@ -14,7 +14,7 @@ header {
     background: rgba(0, 0, 0, 0);
     box-shadow: rgb(0 0 0 / 30%) 0px 2px 3px 0px;
     z-index: 10;
-    height: 1.3rem;
+    height: 7vh;
     padding-right: 2rem;
     position: relative;
     top: 0px;
@@ -22,7 +22,7 @@ header {
 }
 
 .webname {
-    font-size: 0.7rem;
+    font-size: 1.8rem;
     padding-left: 3vw;
 }
 nav {
@@ -34,8 +34,8 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
-    font-size: 0.4rem;
-    font-weight: 900;
+    font-size: 1rem;
+    font-weight: 600;
 
 }
 
@@ -59,11 +59,11 @@ li:hover {
 .herotext {
     width: 40%;
     height: 75%;
-    font-size: 0.6em;
+    /* font-size: 1.5em; */
 }
 .herotext h3 {
     color: green;
-    font-size: 0.7rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.2rem;
     font-family: 'Raleway', sans-serif;
@@ -71,24 +71,28 @@ li:hover {
 
 .herotext h1 {
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-bottom: 0.4rem;
     font-family: 'Open Sans', sans-serif;
 }
 
 .herotext h2 {
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 2rem;
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 0.4rem;
+    margin-bottom: 5vh;
     animation: typing 3s steps(13), blink .5s step-end infinite alternate;
-    width:6rem;
-    height: 1rem;
+    width:18.5vw;
+    height: 4.4vh;
     overflow: hidden;
-    border-right: 2px solid;
+    border-right: 3px solid;
     white-space: no-wrap;
 }
 
+.herotext p {
+  font-size: 1.2rem;
+  color: rgb(96, 96, 96);
+}
 @keyframes typing {
     from {
       width: 0
@@ -104,17 +108,16 @@ li:hover {
 button {
     display: inline-block;
     background: rgba(0, 0, 0, 0);
-    border-radius: 12px;
+    border-radius: 2rem;
     border: 1px solid green;
     color: green;
-    font-size: 0.5rem;
-    font-weight: 900;
+    font-size: 1rem;
+    font-weight: 600;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    margin-top: 1rem;
-    left:0.6rem;    
+    margin-top: 2rem;    
     text-align: center;
-    padding:0.4rem;
+    padding:.7rem;
     cursor: pointer;
 }
 .button1 {
@@ -134,7 +137,7 @@ button:hover {
     padding-bottom: 3vh;
 }
 
-.myintro img {
+.myintro .img {
     border: 1px solid green;
 }
 
@@ -143,7 +146,7 @@ width: 40vw;
 }
 
 .textmyintro {
-    font-size: 0.7rem;
+    font-size: 1.5rem;
 }
 
 .textmyintro h5 {
@@ -155,13 +158,13 @@ font-family: 'Raleway', sans-serif;
 .textmyintro h2 {
 font-weight: 900;
 font-family: 'Open Sans', sans-serif;
-font-size: 1.1rem;
+font-size: 2.2rem;
 padding-bottom:2vh;
 }
 
 .textmyintro p {
     font-family: 'Open Sans', sans-serif;
-    font-size: .5rem;
+    font-size: 1rem;
     padding-bottom:6vh;
     color: gray;
     }
@@ -182,7 +185,7 @@ td {
 
 td:last-child {
   font-family:  'Raleway', sans-serif;
-  font-size:.6rem;
+  font-size:1rem;
 }
 .interests h4{
   padding-bottom: 2vh;
@@ -190,8 +193,10 @@ td:last-child {
 
 .interests  p{
     display: inline;
-    padding: 2vw;
+    padding: 1vw;
 }
+
+
 .myintro i {
   color: green;
   padding-right: .4rem;
@@ -200,7 +205,7 @@ td:last-child {
 /* WHY CHOOSE ME SECTION */
 
 .whychooseme {
-  margin-top: 8vh;
+margin-top: 8vh;
 padding-top:7vh;
 background-color: beige;
 width: 90%;
@@ -214,17 +219,15 @@ gap: 20px;
 
 .whychooseme h5 {
     color:green;
-    margin-bottom: .7vh;
     font-family: 'Raleway', sans-serif;
-    margin-left: 30%;
-    font-size: 0.7rem;
+    font-size: 1.4rem;
     }
 
 .whychooseme h2 {
     font-weight: 900;
     font-family: 'Open Sans', sans-serif;
-    padding-bottom:2vh;
-    font-size: 1.1rem;
+    padding-bottom:3vh;
+    font-size: 2.2rem;
     }
 
 
@@ -238,8 +241,8 @@ gap: 20px;
         color: black;
         display: grid;
         grid-template-columns: 27vw 27vw;
-        grid-template-rows: auto auto auto;
-        gap: 4vw;
+        grid-template-rows: 4vw 4vw 4vw;
+        gap: 5vw;
       }
 
       .skills:not(:last-child) {
@@ -264,12 +267,12 @@ gap: 20px;
       .skills.five{
         grid-column:  1 / 3;
         grid-row: 3;
-        width: 30%;
+        width: 50%;
         margin: auto;
       }
 
       .skills span {
-        font-size: .6rem;
+        font-size: 1.3rem;
         font-weight: 900;
       }
       .details {
@@ -286,10 +289,11 @@ gap: 20px;
       .bar div {
         position: relative;
         width: 0;
-        height: 9px;
+        height: 3vh;
         border-radius: 10px;
         background-color: green;
       }
+  
 /* HTML BAR */
       #html-bar {
         animation: html-fill 2s forwards;
@@ -355,12 +359,12 @@ gap: 20px;
     color:green;
     margin-bottom: .7vh;
     font-family: 'Raleway', sans-serif;
-    font-size: 0.7rem;}
+    font-size: 1.4rem;}
 
 .qualification h2 {
     font-weight: 900;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.1rem;
+    font-size: 2.3rem;
     padding-bottom:10vh;
     }
 
@@ -428,13 +432,13 @@ color: green;
     color:green;
     margin-bottom: .7vh;
     font-family: 'Raleway', sans-serif;
-    font-size: 0.7rem;}
+    font-size: 1.5rem;}
 
 .mywork h2 {    
     font-weight: 900;
     font-family: 'Open Sans', sans-serif;
     padding-bottom:9vh;
-    font-size: 1.1rem;}
+    font-size: 2.2rem;}
 .progress {
   display: flex;
   flex-direction: column;
@@ -468,5 +472,16 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 7vh;
-  font-size:.5rem;
+  font-size:1rem;
 }
+
+
+@media only screen and (max-width: 600px) {...}
+
+@media only screen and (min-width: 600px) {...}
+
+@media only screen and (min-width: 768px) {...}
+
+@media only screen and (min-width: 992px) {...}
+
+@media only screen and (min-width: 1200px) {...}
