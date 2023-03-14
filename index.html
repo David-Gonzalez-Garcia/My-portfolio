@@ -1,227 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David's</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Raleway:wght@300&display=swap" rel="stylesheet">
-<!-- icons -->
-<script src="https://kit.fontawesome.com/624910f444.js" crossorigin="anonymous"></script>
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/624910f444.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header>
-      <h3 class="webname">davidglez.eu</h3>
-      <nav>
-        <ul>
-          <li><a href="#Home"></a>Home</li>
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- navgaition menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">davidglez.eu</a></div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
           <li><a href="#intro">Intro</a></li>
-          <li><a href="#Expertise"></a>Expertise</li>
-          <li><a href="#Projects"></a>Projects</li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
         </ul>
-      </nav>
-    </header>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
 
-    <!-- HERO SECTION -->
-    <main>
-      <div class="hero" id="Home">
-        <div class="herotext">
-          <h3>Hi, I am</h3>
-          <h1>David González</h1>
-          <h2>Web Developer</h2>
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one">Hi, I am</div>
+          <div class="text-two">David González</div>
+          <div class="text-three">Web Developer</div>
+          <div class="text-four">
+            Student, learning to become a Fullstack Web Developer
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="button1"><a href="">Download CV</a></button>
+          <button class="button2"><a href="#popup1">Contact Me</a></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section Start -->
+    <section class="myintro" id="intro">
+      <div class="content">
+        <div class="title"><span>My intro</span></div>
+        <div class="left">
+          <img src="./Images/david_pic.jpeg" alt="" />
+        </div>
+        <div class="right">
+          <div class="topic">About Me</div>
           <p>
-           Student, learning to become a Fullstack Web Developer in the future. Check out here how I am doing!
+            Innovative and goal-focused professional. I am studying to become a
+            full-stack web developer, after having worked in completely
+            different fields for a few years. High multicultural skills,
+            passionate about new technologies and immense willingness to go deep
+            into the Web Development world.
           </p>
-
-          <div class="buttons">
-              <button class="button1"><a href=""></a>Download CV</button>
-              <button class="button2"><a href="#popup1"></a></a>Contact Me</button>
+          <table>
+            <tr>
+              <td>
+                <i class="fa-regular fa-user fa-sm" style="color: green"></i>
+              </td>
+              <th>Name</th>
+              <td>David González García</td>
+            </tr>
+            <tr>
+              <td>
+                <i
+                  class="fa-solid fa-phone-flip fa-sm"
+                  style="color: green"
+                ></i>
+              </td>
+              <th>Phone</th>
+              <td>+34665035127</td>
+            </tr>
+            <tr>
+              <td>
+                <i
+                  class="fa-regular fa-envelope fa-sm"
+                  style="color: green"
+                ></i>
+              </td>
+              <th>Email</th>
+              <td>davidgonzalez@gmx.com</td>
+            </tr>
+          </table>
+          <div class="interests">
+            <h4>My Interests</h4>
+            <div class="icons">
+              <p><i class="fas fa-film" style="color: green"></i>Cinema</p>
+              <p>
+                <i
+                  class="fa-solid fa-apple-whole fa fa-lg"
+                  style="color: green"
+                ></i
+                >Nutrition
+              </p>
+              <p><i class="fas fa-dumbbell" style="color: green"></i>Fitness</p>
+              <p>
+                <img
+                  src="/climbing-1528278-1291475-3378983757.png"
+                  width="40em"
+                  height="40em"
+                  alt=""
+                  style="margin-right: 10px"
+                />Bouldering
+              </p>
             </div>
-          </div>
-        </div>
-      
-
-      <!-- MY INTRO SECTION -->
-      <section class="myintro" id="intro">
-        <div class="img">
-          <img src="/pexels-mentatdgt-1024311.jpg" width="280vw" alt="" />
-        </div>
-
-        <div class="myintrocontainer">
-          <div class="textmyintro">
-            <h5>My intro</h5>
-            <h2>About Me</h2>
-            <p>
-              Innovative and goal-focused professional. I am studying to become a front- and back-end web developer, after having worked in completely different fields for a few years. High multicultural skills, passionate about new technologies and immense willingness to go deep into the Web Development world.   
-            </p>
-            <table>
-              <tr>
-                <td><i class="fa-regular fa-user fa-sm"></i></i></td>
-                <th>Name</th>
-                <td>David González García</td>
-              </tr>
-              <tr>
-                <td><i class="fa-solid fa-phone-flip fa-sm"></i></td>
-                <th>Phone</th>
-                <td>+34665035127</td>
-              </tr>
-              <tr>
-                <td><i class="fa-regular fa-envelope fa-sm"></i></td>
-                <th>Email</th>
-                <td>davidgonzalez@gmx.com</td>
-              </tr>
-            </table>
-            <div class="interests">
-              <h4>My Interests</h4>
-              <p><i class="fas fa-film"></i>Cinema</p>
-              <p><i class="fa-solid fa-apple-whole fa fa-lg"></i>Nutrition</p>
-              <p><i class="fas fa-dumbbell"></i>Fitness</p>
-              <p><img src="/climbing-1528278-1291475-3378983757.png" width="40em" height="40em" alt="">Bouldering</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- WHY CHOOSE ME SECTION -->
-      <section class="whychooseme" id="Expertise">
-        
-          <h5>Why Choose Me</h5>
-          <h2>My Expertise Area</h2>
-
-
-        <div class="container">
-
-          <div class="skills one">
-            <div class="details">
-              <span>HTML</span>
-              <span>50%</span>
-            </div>
-            <div class="bar">
-              <div id="html-bar"></div>
-            </div>
-          </div>
-
-          <div class="skills two">
-            <div class="details">
-              <span>CSS</span>
-              <span>65%</span>
-            </div>
-            <div class="bar">
-              <div id="css-bar"></div>
-            </div>
-          </div>
-
-          <div class="skills three">
-            <div class="details">
-              <span>SASS</span>
-              <span>30%</span>
-            </div>
-            <div class="bar">
-              <div id="sass-bar"></div>
-            </div>
-          </div>
-
-          <div class="skills four">
-            <div class="details">
-              <span>Bootstrap</span>
-              <span>40%</span>
-            </div>
-            <div class="bar">
-              <div id="bootstrap-bar"></div>
-            </div>
-          </div>
-
-          <div class="skills five">
-            <div class="details">
-              <span>Java Script</span>
-              <span>10%</span>
-            </div>
-            <div class="bar">
-              <div id="js-bar"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
- <!-- Qualification section -->
-
-      <section class="qualification">
-        <h5>My Qualification</h5>
-        <h2>The Journey</h2>
-        <div class="qualificationcol">
-        <div class="education">
-          <div class="qtitle">          
-            <i class="fa-solid fa-graduation-cap fa-2xl"></i>
-            <h4>Education</h4>
-          </div>
-
-          <div class=edcard>
-            <h6>Web Development course</h6>
-            <p>Digital Career Institute</p>
-            <p>2022 - Currently</p>
-          </div>
- 
-          <div class=edcard>      
-              
-            <h6>Master in Political & Business Communication</h6>
-            <p>Camilo José Cela University</p>
-            <p>2016-2017</p>
-          </div>
-          <div class=edcard>
-         
-            <h6>BA in International Relations</h6>
-            <p>Complutense University of Madrid</p>
-            <p>2012-2016</p>
-          </div>
-        </div>
-
-        <div class="experience">
-          <div class="qtitle">
-            <i class="fa-solid fa-briefcase fa-2xl"></i>
-            <h4>Experience</h4>
-          </div>
-          <div class="excard">  
-            <h6>Association of European Border Regions</h5>
-            <p>Communication and Project Officer</p>
-            <p>2018-2021</p>
-          </div>
-          <div class="excard">
-            <h6>Spanish Association of Automotive Suppliers</h6>
-            <p>
-              Communication, Public Affairs and Association Development Specialist
-            </p>
-            <p>2016-2018</p>
-          </div>
-          <div class="excard">       
-            <h6>Plataforma del Estudiante</h6>
-            <p>Co-founder, Communication & Marketing Manager</p>
-            <p>2014-2016</p>
           </div>
         </div>
       </div>
-      </section>
+    </section>
 
-      <!-- Projects section -->
-      <section class="mywork" id="Projects">
-        <h5>My Work</h5>
-        <h2>Projects</h2>
-        <div class="progress">
-          <img src="/report-document-icon-vector-18383013.jpg" alt="">
-          <p>Coming soon!</p>
+    <!-- My Skill Section Start -->
+    <!-- Section Tag and Other Div will same where we need to put same CSS -->
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="boxes">
+          <div class="box">
+            <div class="topic">HTML</div>
+            <div class="per">90%</div>
+          </div>
+          <div class="box">
+            <div class="topic">CSS</div>
+            <div class="per">80%</div>
+          </div>
+          <div class="box">
+            <div class="topic">JavaScript</div>
+            <div class="per">70%</div>
+          </div>
+          <div class="box">
+            <div class="topic">React.js</div>
+            <div class="per">60%</div>
+          </div>
+          <div class="box">
+            <div class="topic">Node.js</div>
+            <div class="per">60%</div>
+          </div>
+          <div class="box">
+            <div class="topic">Express.js</div>
+            <div class="per">60%</div>
+          </div>
+          <div class="box">
+            <div class="topic">Bootstrap</div>
+            <div class="per">60%</div>
+          </div>
+          <div class="box">
+            <div class="topic">SASS</div>
+            <div class="per">60%</div>
+          </div>
+          <div class="box">
+            <div class="topic">MongoDB</div>
+            <div class="per">40%</div>
+          </div>
         </div>
-        
-      </section>
-      <section class="contact">
-        <form action=""></form>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <!-- My Projects Section Start -->
+    <section class="mywork" id="Projects">
+      <h5>My Work</h5>
+      <h2>Projects</h2>
+      <div class="progress">
+        <img src="/report-document-icon-vector-18383013.jpg" alt="" />
+        <p>Coming soon!</p>
+      </div>
+    </section>
+    <section class="contact">
+      <form action=""></form>
+    </section>
+
+    <!-- Contact Me section Start -->
+    <section class="contact" id="contact">
+      <div class="content">
+        <div class="title"><span>Contact Me</span></div>
+        <div class="text">
+          <div class="topic">Have Any Project?</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+            neque ipsum corrupti dolores, facere numquam voluptate aspernatur
+            sit perferendis qui nisi modi! Recusandae deserunt consequatur
+            voluptatibus alias repellendus nobis eligendi.
+          </p>
+          <div class="button">
+            <button>Let's Chat</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
     <footer>
       <h1>davidglez.eu</h1>
       <p>All rights reserved</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

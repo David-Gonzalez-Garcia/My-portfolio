@@ -1,799 +1,540 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
-/* HEADER */
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(0, 0, 0, 0);
-    box-shadow: rgb(0 0 0 / 30%) 0px 2px 3px 0px;
-    z-index: 10;
-    height: 7vh;
-    padding-right: 2rem;
-    position: relative;
-    top: 0px;
-    font-family: 'Open Sans', sans-serif;
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 12px;
+    transition: all 0.3s ease;
 }
 
-.webname {
-    font-size: 1.8rem;
-    padding-left: 3vw;
+::-webkit-scrollbar-thumb:hover {
+    background: green;
 }
-nav {
-    width: 30%;
-    cursor: pointer;
+/* navbar styling */
+nav{
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
 }
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    font-size: 1rem;
-    font-weight: 600;
-
+nav.sticky{
+  background: green;
+  padding: 13px 0;
 }
-
-li:hover {
-    color:green;
+nav .navbar{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
 }
-
-/* HERO SECTION */
-.hero {
-    background-image: url(/pexels-karolina-grabowska-5208871.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 60vh;
-    width: 100%;
-    display: flex;
-    align-items: center ;
-    padding-left: 7vw;
+nav .navbar .logo a{
+  font-weight: 600;
+  font-size: 35px;
+  color: green
 }
-
-.herotext {
-    width: 40%;
-    height: 75%;
-    /* font-size: 1.5em; */
+nav.sticky .navbar .logo a{
+  color: #fff;
 }
-.herotext h3 {
-    color: green;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.2rem;
-    font-family: 'Raleway', sans-serif;
+nav .navbar .menu{
+  display: flex;
+  position: relative;
 }
-
-.herotext h1 {
-    font-weight: 900;
-    font-size: 3rem;
-    margin-bottom: 0.4rem;
-    font-family: 'Open Sans', sans-serif;
+nav .navbar .menu li{
+  list-style: none;
+  margin: 0 8px;
 }
-
-.herotext h2 {
-    font-weight: 400;
-    font-size: 2rem;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 5vh;
-    animation: typing 3s steps(13), blink .5s step-end infinite alternate;
-    width:18.5vw;
-    height: 4.4vh;
-    overflow: hidden;
-    border-right: 3px solid;
-    white-space: no-wrap;
+.navbar .menu a{
+  font-size: 18px;
+  font-weight: 500;
+  color: #0E2431;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+.navbar .menu a:hover{
+  color: green;
+}
+nav.sticky .menu a{
+  color: #FFF;
+}
+nav.sticky .menu a:hover{
+  color: #0E2431;
+}
+.navbar .media-icons a{
+  color: green;
+  font-size: 18px;
+  margin: 0 6px;
+}
+nav.sticky .media-icons a{
+  color: #FFF;
 }
 
-.herotext p {
-  font-size: 1.2rem;
-  color: rgb(96, 96, 96);
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
 }
-@keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
+nav .menu-btn{
+  color: green;
+}
+nav.sticky .menu-btn{
+  color: #FFF;
+}
+.navbar .menu .menu-btn{
+  color: #fff;
+}
+
+/* home section styling */
+.home{
+  height: 80vh;
+  width: 100%;
+  background: url("images/background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .home-content{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .text-one{
+  font-size: 25px;
+  color: #0E2431;
+}
+.home .text-two{
+  color: #0E2431;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .text-three{
+  font-size: 40px;
+  margin: 5px 0;
+  color: green;
+}
+.home .text-four{
+  font-size: 23px;
+  margin: 5px 0;
+  color: #0E2431;
+}
 
 button {
-    display: inline-block;
-    background: rgba(0, 0, 0, 0);
-    border-radius: 2rem;
-    border: 1px solid green;
-    color: green;
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    margin-top: 2rem;    
-    text-align: center;
-    padding:.7rem;
-    cursor: pointer;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 2rem;
+  border: 1px solid green;
+  color: green;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin-top: 2rem;    
+  text-align: center;
+  padding:.7rem;
+  cursor: pointer;
 }
 .button1 {
-    margin-right:2vw;
-}
-button:hover {
-    background-color: green;
-    color:white;
+  margin-right:2vw;
 }
 
-
-/* INTRO SECTION */
-.myintro {
-    padding-top:15vh;
-    display: flex;
-    justify-content:space-evenly ;
-    align-items: center;
-    padding-bottom: 3vh;
+button a{
+  color: black;
 }
 
-.myintro .img {
-    border: 1px solid green;
-}
-
-.myintrocontainer {
-width: 40vw;
-}
-
-.textmyintro {
-    font-size: 1.5rem;
-}
-
-.textmyintro h5 {
-color:green;
-margin-bottom: .7vh;
-font-family: 'Raleway', sans-serif;
-}
-
-.textmyintro h2 {
-font-weight: 900;
-font-family: 'Open Sans', sans-serif;
-font-size: 2.2rem;
-padding-bottom:2vh;
-}
-
-.textmyintro p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    padding-bottom:6vh;
-    color: gray;
-    }
-
-table {
- padding-bottom: 3vh;
-}
-
-.textmyintro h4 {
-    font-weight: 900;
-    font-family: 'Open Sans', sans-serif;
-    }
-
-td {
-  padding-right: 2vw;
-  padding-left: 5vw;
-}
-
-td:last-child {
-  font-family:  'Raleway', sans-serif;
-  font-size:1rem;
-}
-.interests h4{
-  padding-bottom: 2vh;
-}
-
-.interests  p{
-    display: inline;
-    padding: 1vw;
+button:hover,
+button:hover a {
+  background-color: green;
+  color: white;
 }
 
 
-.myintro i {
-  color: green;
-  padding-right: .4rem;
+/* About Section Styling */
+
+
+section .content{
+  padding-top: 20px;
+  height: 80vh;
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* WHY CHOOSE ME SECTION */
-
-.whychooseme {
-margin-top: 8vh;
-padding-top:7vh;
-background-color: beige;
-width: 90%;
-height: 70vh;
-margin-left: 5%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 20px;
-}
-
-.whychooseme h5 {
-    color:green;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.4rem;
-    }
-
-.whychooseme h2 {
-    font-weight: 900;
-    font-family: 'Open Sans', sans-serif;
-    padding-bottom:3vh;
-    font-size: 2.2rem;
-    }
-
-
-.container {
-        width: 80%;
-        height: 100%;
-        margin-left: 10%;
-        padding: 1rem;
-        font-family: 'Open Sans', sans-serif;
-        font-weight:500;
-        color: black;
-        display: grid;
-        grid-template-columns: 27vw 27vw;
-        grid-template-rows: 4vw 4vw 4vw;
-        gap: 5vw;
-      }
-
-      .skills:not(:last-child) {
-        margin-bottom: 2vw;
-      }
-      .skills.one {
-        grid-column:  1;
-        grid-row: 1;
-      }
-      .skills.two {
-        grid-column:  2;
-        grid-row: 1;
-      }
-      .skills.three {
-        grid-column:  1;
-        grid-row: 2;
-      }
-      .skills.four {
-        grid-column:  2;
-        grid-row: 2;
-      }
-      .skills.five{
-        grid-column:  1 / 3;
-        grid-row: 3;
-        width: 50%;
-        margin: auto;
-      }
-
-      .skills span {
-        font-size: 1.3rem;
-        font-weight: 900;
-      }
-      .details {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 1vh;
-      }
-      .bar {
-        position: relative;
-        border: 2px solid green;
-        border-radius: 20px;
-      }
-      .bar div {
-        position: relative;
-        width: 0vw;
-        height: 3vh;
-        border-radius: 10px;
-        background-color: green;
-      }
-  
-/* HTML BAR */
-      #html-bar {
-        animation: html-fill 2s forwards;
-      }
-      @keyframes html-fill {
-        100% {
-          width: 50%;
-        }
-      }
-
-/* CSS BAR */
-      #css-bar {
-        animation: css-fill 2s forwards;
-      }
-      @keyframes css-fill {
-        100% {
-          width: 65%;
-        }
-      }
-
-/* SASS BAR */
-#sass-bar {
-    animation: sass-fill 2s forwards;
-  }
-  @keyframes sass-fill {
-    100% {
-      width: 30%;
-    }
-  }
-
-/* BOOTSTRAP BAR */
-      #bootstrap-bar {
-        animation: bootstrap-fill 2s forwards;
-      }
-      @keyframes bootstrap-fill {
-        100% {
-          width: 40%;
-        }
-      }
-
-/* JS BAR */
-      #js-bar {
-        animation: js-fill 2s forwards;
-      }
-      @keyframes js-fill {
-        100% {
-          width: 10%;
-        }
-      }
-
-      /* MY QUALIFICATIONS */
-      
-  .qualification {
-     display: flex;
-     width: 100%;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     padding-top: 8vh;
-      }
-
-.qualification h5 {
-    color:green;
-    margin-bottom: .7vh;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.4rem;}
-
-.qualification h2 {
-    font-weight: 900;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2.3rem;
-    padding-bottom:10vh;
-    }
-
-.qualification h4 {
-font-size: 1.9rem;
-}
-
-.qualification h6 {
-  font-size: 1.2rem;
-}
-
-.qualification p {
-  font-size: 1rem;
-}
-
-.qualification p:last-child {
-  color:green;
-}
-
-.qualificationcol {
-    display:grid;
-    grid-template-columns: 31vw 31vw;
-    justify-content: ;
-    gap: 9vw;
-}
-
-.qualification h6 {
-padding-left: 0.2rem;
-}
-
-.edcard {
-  margin-bottom: 3vh;
-  padding-left: 1vw;
-  border-left: 3px green solid;
-}
-
-.excard {
-  margin-bottom: 3vh;
-  padding-left: 1vw;
-  border-left: 3px green solid;
-}
-.qtitle {
+section .title{
   display: flex;
   justify-content: center;
-  gap:2vw;
-  align-items: center;
-  padding-bottom: 4vh;
-}
-.edcard:nth-last-child(5) {
-color: green;
+  margin-bottom: 10vh;
+  width: 100%;
 }
 
-/* PROJECTS */
-.mywork {
-    padding-top: 12vh;
-    padding-bottom:7vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+section .title span{
+  color: #0E2431;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: green;
+  left: 0;
+  bottom: 0;
+}
+
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section .left{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+section .left img{
+  height: 450px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+section .right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+section .topic{
+  color: #0E2431;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+ 
+}
+
+section .right p{
+  text-align: justify;
+  color: #0E2431;
+  width: 80%;
+margin-bottom:4vh;
+  margin-left: auto;
+}
+
+section table {
+margin-left: 2vh;
+margin-bottom: 5vh;
+}
+
+section .interests {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+section .icons {
+  display: flex;
+  flex-direction: row;
+}
+
+section .interests p {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5vw;
+}
+
+section .button{
+  margin: 16px 0;
+}
+
+section .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: green;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+section .button button:hover{
+  border-color: green;
+  background-color: #fff;
+  color: green;
+}
+
+
+
+
+ /* My Skills CSS */
+ .skills{
+   background: #F0F8FF;
+ }
+ .skills .content{
+   padding: 40px 0;
+ }
+
+.skills .boxes{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skills .box{
+  width: 33.33%;
+  margin: 20px 0;
+  display: flex;
+  
+  justify-content: center;
+}
+.skills .boxes .topic{
+  font-size: 20px;
+  color: black;
+}
+.skills .boxes .per{
+  font-size: 60px;
+  color: green;
+}
+ /* Projects CSS */
+ .mywork {
+  padding-top: 1vh;
+  padding-bottom:7vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .mywork h5 {    
-    color:green;
-    margin-bottom: .7vh;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.4rem;}
+  color:green;
+  margin-bottom: .7vh;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;}
 
 .mywork h2 {    
-    font-weight: 900;
-    font-family: 'Open Sans', sans-serif;
-    padding-bottom:9vh;
-    font-size: 2.2rem;}
+  font-weight: 900;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom:9vh;
+  font-size: 2.2rem;}
 .progress {
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 
-  align-items: center;
-}
-.mywork img {
-  width: 10vw;
-  animation: jump 1.5s step-end infinite;
-}
-    @keyframes jump{
-      0%{ transform:translateY(0); }
-      20%{ transform:translateY(0); }
-      40%{ transform:translateY(-30px); }
-      50%{ transform:translateY(0); }
-      60%{ transform:translateY(-15px); }
-      80%{ transform:translateY(0); }
-      100%{ transform:translateY(0); }
-      }
-
-/* Footer */
-
-footer {
-  height:20%;
-  width: 100%;
-  bottom:0;
-  background-color: #0b0a1f;
-  color:white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 7vh;
-  font-size:1rem;
+align-items: center;
 }
 
+section .mywork img {
+width: 10vw;
+animation: jump 1.5s step-end infinite;
+}
+  @keyframes jump{
+    0%{ transform:translateY(0); }
+    20%{ transform:translateY(0); }
+    40%{ transform:translateY(-30px); }
+    50%{ transform:translateY(0); }
+    60%{ transform:translateY(-15px); }
+    80%{ transform:translateY(0); }
+    100%{ transform:translateY(0); }
+    }
 
-@media (max-width: 600px) {
-  body {
+/* Contact Me CSS */
+.contact{
+  background: #F0F8FF;
+}
+.contact .content{
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.contact .text{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+/* Footer CSS */
+footer{
+  background: black;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+footer h1, footer p{
+  color: #fff;
+}
+footer .text span{
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+footer .text span a{
+  font-weight: 500;
+  color: #FFF;
+}
+footer .text span a:hover{
+  text-decoration: underline;
+}
+
+/* Scroll TO Top Button CSS */
+.scroll-button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: green;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+  section .content{
+    width: 85%;
+  }
+}
+@media (max-width: 1000px) {
+  .about .about-details{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  table {
-      width:95%;
-  }
-  input[type=text], textarea {
-      width:75%;
-  }
-}
-  
-
-
-
-
-@media only screen and (max-width: 600px) {
-  /* HEADER */
-  header {
-      height: 10vh;
-      flex-direction: column;
-      justify-content: center;
-  }
-
-  .webname {
-      font-size: 1.5rem;
-      padding-left: 0;
-  }
-
-  nav {
-      width: 50%;
-  }
-
-  ul {
-      flex-direction: column;
-      justify-content: space-evenly;
-  }
-
-  li {
-      margin-bottom: 1vh;
-  }
-
-  /* HERO SECTION */
-  .hero {
-      height: 40vh;
-      padding-left: 0;
-  }
-
-  .herotext {
-      width: 90%;
-      height: 70%;
-      font-size: 1rem;
-  }
-
-  .herotext h1 {
-      font-size: 2rem;
-      margin-bottom: 0.2rem;
-  }
-
-  .herotext h2 {
-      font-size: 1.5rem;
-      margin-bottom: 3vh;
-      width: 100%;
-      height: 3vh;
-  }
-
-  .herotext p {
-      font-size: 1rem;
-  }
-
-  button {
-      font-size: 0.8rem;
-      margin-top: 1rem;
-      padding: 0.5rem;
-  }
-
-  .button1 {
-      margin-right: 0;
-  }
-
-  /* INTRO SECTION */
-  .myintro {
-      flex-direction: column;
-      padding-top: 10vh;
-  }
-
-  .myintro .img {
-      width: 60%;
-      margin: auto;
-  }
-
-  .myintrocontainer {
-      width: 90%;
-  }
-
-  .textmyintro h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1vh;
-  }
-
-  .textmyintro h3 {
-      font-size: 1.2rem;
-  }
-
-  .textmyintro p {
-      font-size: 0.9rem;
-  }
-
-  /* SKILLS SECTION */
-  .skills {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .skills h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1vh;
-  }
-
-  .skills .skillscontainer {
-      flex-wrap: wrap;
-      width: 90%;
-  }
-
-  .skills .skillscontainer .box {
-      width: 45%;
-      margin-bottom: 2vh;
-  }
-
-  .skills .skillscontainer .box .title {
-      font-size: 1rem;
-  }
-
-  .skills .skillscontainer .box .bar {
-      height: 5px;
-  }
-
-   /* PROJECTS SECTION */
-   .projects h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1vh;
-}
-
-.projectscontainer {
-    flex-wrap: wrap;
-    width: 90%;
-}
-
-.projectscontainer .box {
-    width: 45%;
-    margin-bottom: 2vh;
-}
-
-.projectscontainer .box .title {
-    font-size: 1rem;
-}
-
-/* FOOTER */
-footer {
-    flex-direction: column;
-    align-items: center;
-}
-
-footer h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1vh;
-}
-
-footer .socialmedia {
-    margin-bottom: 2vh;
-}
-
-footer .socialmedia a {
-    font-size: 1.5rem;
-}
-
-footer .footertext {
-    width: 90%;
-    font-size: 0.9rem;
-}
-}
-
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-  .herotext {
-    width: 50%;
-  }
-
-  .textmyintro {
-    width: 50%;
-  }
-
-  .skillscontainer {
-    width: 70%;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 914px) {
-  /* HEADER */
-  header {
-    height: 6vh;
-    font-size: 1.4rem;
-  }
-  .webname {
-    font-size: 1.6rem;
-  }
-  nav {
-    width: 25%;
-  }
-  ul {
-    font-size: 0.9rem;
-  }
-
-  /* HERO SECTION */
-  .hero {
-    height: 55vh;
-  }
-  .herotext {
-    width: 35%;
-    height: 70%;
-  }
-  .herotext h3 {
-    font-size: 1.3rem;
-  }
-  .herotext h1 {
-    font-size: 2.5rem;
-  }
-  .herotext h2 {
-    font-size: 1.8rem;
-    width: 16vw;
-    height: 3.8vh;
-  }
-  .herotext p {
-    font-size: 1rem;
-  }
-  button {
-    font-size: 0.9rem;
-  }
-
-  /* INTRO SECTION */
-  .myintro {
-    padding-top: 10vh;
-  }
-  .myintro .img {
-    width: 25vw;
-    height: 25vw;
-  }
-  .myintrocontainer {
-    width: 35vw;
-  }
-  .textmyintro {
-    font-size: 0.9rem;
-  }
-  .textmyintro h5 {
-    font-size: 1.2rem;
-  }
-  .textmyintro h2 {
-    font-size: 1.5rem;
-    margin-bottom: 2vh;
-  }
-  .textmyintro p {
-    font-size: 0.9rem;
-  }
-  .textmyintro table {
-    font-size: 0.8rem;
-  }
-  .textmyintro .interests {
-    font-size: 0.8rem;
-  }
-  .textmyintro .interests p {
-    font-size: 0.7rem;
-  }
-
-  /* SKILLS SECTION */
-  .skills {
-    padding-top: 10vh;
-  }
-  .skills h2 {
-    font-size: 1.5rem;
-    margin-bottom: 2vh;
-  }
-  .skills p {
-    font-size: 0.9rem;
-  }
-  .skills .skillscontainer {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .skills .skill {
-    width: 20vw;
-    height: 20vw;
-  }
-  .skills .skill h3 {
-    font-size: 0.8rem;
-  }
-  .skills .skill p {
-    font-size: 0.7rem;
-  }
-
-  /* PROJECTS SECTION */
-  .projects {
-    padding-top: 10vh;
-  }
-
-
-@media only screen and (min-width: 1201px) {
-  .herotext {
-    width: 30%;
-  }
-
-  .textmyintro {
+    justify-content: center;
     width: 100%;
   }
+  .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media (max-width: 900px) {
+  .about .left img{
+    height: 350px;
+    width: 350px;
+  }
+}
 
-  .skillscontainer {
-    width: 40%;
+@media (max-width: 750px) {
+  nav .navbar{
+    width: 90%;
+  }
+  nav .navbar .menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: #0E2431;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .navbar.active .menu{
+    left: 0;
+  }
+  nav .navbar .menu a{
+    font-size: 23px;
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+  }
+  nav.sticky .menu a:hover{
+    color: green;
+  }
+  nav .navbar .media-icons{
+    display: none;
+  }
+  nav .menu-btn,
+  .navbar .menu .cancel-btn{
+    display: block;
+  }
+  .home .text-two{
+    font-size: 65px;
+  }
+  .home .text-three{
+    font-size: 35px;
+  }
+  .skills .skills-details{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills-details .text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .skills-details .boxes{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .services .boxes .box{
+    margin: 20px 0;
+    width: 100%;
+  }
+  .contact .text{
+    width: 100%;
+}
+}
+
+@media (max-width: 500px){
+  .home .text-two{
+    font-size: 55px;
+  }
+  .home .text-three{
+    font-size: 33px;
+  }
+  .skills-details .boxes .per{
+    font-size: 50px;
+    color: green;
   }
 }
