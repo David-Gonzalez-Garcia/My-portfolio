@@ -176,12 +176,12 @@ button:hover a {
 }
 
 
-/* About Section Styling */
+/* Section Styling */
 
 
 section .content{
-  padding-top: 20px;
-  height: 80vh;
+  padding-top: 0px;
+  height: 20%;
   width: 80%;
   margin: 40px auto;
   font-family: 'Poppins', sans-serif;
@@ -222,6 +222,8 @@ section .title span::after{
   transform: translateX(-50%);
 }
 
+/* About Section Styling */
+
 section .left{
   width: 50%;
   display: flex;
@@ -247,7 +249,7 @@ section .topic{
   color: #0E2431;
   font-size: 25px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
  
 }
 
@@ -337,33 +339,31 @@ section .button button:hover{
   color: green;
 }
  /* Projects CSS */
+
+
+
  .projects {
   padding-top: 1vh;
   padding-bottom:7vh;
   width: 100%;
+
+}
+.projects .content{
+  padding: 40px 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.projects h5 {    
-  color:green;
-  margin-bottom: .7vh;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.4rem;}
-
-.projects h2 {    
-  font-weight: 900;
-  font-family: 'Open Sans', sans-serif;
-  padding-bottom:9vh;
-  font-size: 2.2rem;}
-.progress {
+ }
+.projects .examples {
 display: flex;
 flex-direction: column;
-
 align-items: center;
 }
 
+.projects p {
+  font-weight: 500;
+}
 section .projects img {
 width: 10vw;
 animation: jump 1.5s step-end infinite;
@@ -383,8 +383,7 @@ animation: jump 1.5s step-end infinite;
   background: #F0F8FF;
 }
 .contact .content{
-  margin: 0 auto;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 .contact .text{
   width: 80%;
@@ -436,26 +435,26 @@ footer .text span a:hover{
   }
 }
 @media (max-width: 1000px) {
-  .about .about-details{
+  .myintro .about-details{
     justify-content: center;
     flex-direction: column;
   }
-  .about .about-details .left{
+  .myintro .about-details .left{
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .about-details .right{
+  .myintro-details .right{
     width: 90%;
     margin: 40px 0;
   }
-  .services .boxes .box{
+  .skills .boxes .box{
     margin: 20px 0;
     width: calc(100% / 2 - 20px);
   }
 }
 @media (max-width: 900px) {
-  .about .left img{
+  .myintro .left img{
     height: 350px;
     width: 350px;
   }
@@ -517,7 +516,7 @@ footer .text span a:hover{
     align-items: center;
     width: 100%;
   }
-  .services .boxes .box{
+  .skills .boxes .box{
     margin: 20px 0;
     width: 100%;
   }
