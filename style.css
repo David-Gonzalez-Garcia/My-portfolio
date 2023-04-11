@@ -264,56 +264,38 @@ section .right p{
   color: #0E2431;
   width: 80%;
 margin-bottom:4vh;
-  margin-left: auto;
+  
 }
 
 section table {
-margin-left: 2vh;
-margin-bottom: 5vh;
+  margin-left: 2vh;
+  margin-bottom: 5vh;
+  border-spacing: 0 10px; /* Add vertical spacing between table rows */
+}
+
+section th, section td {
+  padding: 5px; /* Add padding to table cells */
 }
 
 section .interests {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 1rem; /* Add space below the interests section */
 }
 
 section .icons {
   display: flex;
   flex-direction: row;
+  gap: 10px; /* Add space between icons */
 }
 
 section .interests p {
   display: flex;
   flex-direction: row;
+  align-items: center; /* Vertically align the text and icons */
   margin: 0.5vw;
 }
-
-section .button{
-  margin: 16px 0;
-}
-
-section .button button{
-  outline: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: 25px;
-  font-weight: 400;
-  background: green;
-  color: #fff;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-
-section .button button:hover{
-  border-color: green;
-  background-color: #fff;
-  color: green;
-}
-
-
-
 
  /* My Skills CSS */
  .skills{
@@ -514,10 +496,13 @@ footer .text span a:hover{
     flex-direction: column;
     align-items: center;
   }
-  .myintro .left,
-  .myintro .right {
+  .myintro .left {
     max-width: 90%;
     margin: 0 auto;
+  }
+  .myintro .right{
+    width: 100%;
+    margin-right: 0;
   }
   .myintro .interests h4 {
     text-align: center;
@@ -544,28 +529,28 @@ footer .text span a:hover{
 }
 
 
-  .skills .skills-details{
+  .skills {
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
-  .skills-details .text{
+  .skills .text{
     width: 100%;
     margin-bottom: 50px;
   }
-  .skills-details .boxes{
+  .skills .boxes{
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-  .services .boxes .box{
+  /* .skills .boxes .box{
     margin: 20px 0;
-    width: 100%;
-  }
+    width: 80%;
+  } */
   .contact .text{
     width: 100%;
 }
-}
+
 
 @media (max-width: 500px){
   .home .text-two{

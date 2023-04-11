@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "## Objective Create a personal portfolio website that accurately represents your accomplishments, skill sets, and experience. This portfolio will be the first introduction between you and a prospective hiring manager. Hiring managers are looking for skill and professionality, not irrelevant past experience, excessive personal content, goofy memes, or anything that distracts them from your hireability.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/David-Gonzalez-Garcia/david-gonzalez-garcia.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/David-Gonzalez-Garcia/david-gonzalez-garcia.github.io/issues"
+  },
+  "homepage": "https://github.com/David-Gonzalez-Garcia/david-gonzalez-garcia.github.io#readme",
+  "dependencies": {
+    "reaact": "^0.0.1-security",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  }
+}
