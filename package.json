@@ -2,11 +2,12 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Personal portfolio website that accurately represents my accomplishments, skill sets, and experience.",
-  "main": "index.html",
+  "main": "index.js",
   "homepage": "http://www.davidglez.eu",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "repository": {
     "type": "git",
