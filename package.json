@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "## Personal portfolio website that accurately represents my accomplishments, skill sets, and experience.",
+  "description": "Personal portfolio website that accurately represents my accomplishments, skill sets, and experience.",
   "main": "index.js",
   "homepage": "http://www.davidglez.eu",
   "scripts": {
