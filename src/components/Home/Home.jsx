@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import CV from '../../Download/Gonzalez, David, CV_Web_Developer.pdf'
 
 const Home = () => {
   return (
@@ -23,7 +24,7 @@ const Home = () => {
           </div>
           <div className="buttons">
             <button className="button1">
-              <a href="./Download/Gonzalez, David, CV_Web_Developer.pdf">
+              <a href={CV}>
                 Download CV
               </a>
             </button>

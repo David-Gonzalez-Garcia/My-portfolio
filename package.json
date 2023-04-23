@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Personal portfolio website that accurately represents my accomplishments, skill sets, and experience.",
   "main": "index.js",
-  "homepage": "http://www.davidglez.eu",
+  "homepage": "https://github.com/David-Gonzalez-Garcia/david-gonzalez-garcia.github.io.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "react-scripts start"
