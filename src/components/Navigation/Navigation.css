@@ -1,0 +1,158 @@
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  nav.sticky {
+    background: green;
+    padding: 13px 0;
+  }
+  
+  nav .navbar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+
+  nav .menu-btn,
+.navbar .menu .cancel-btn{
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+  
+  nav .navbar .logo a {
+    font-weight: 600;
+    font-size: 35px;
+    color: green;
+  }
+  
+  nav.sticky .navbar .logo a {
+    color: #fff;
+  }
+  
+  nav .navbar .menu {
+    display: flex;
+    position: relative;
+  }
+  
+  nav .navbar .menu li {
+    list-style: none;
+    margin: 0 8px;
+  }
+  
+  .navbar .menu a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0E2431;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+  }
+  
+  .navbar .menu a:hover {
+    color: green;
+  }
+  
+  nav.sticky .menu a {
+    color: #FFF;
+  }
+  
+  nav.sticky .menu a:hover {
+    color: #0E2431;
+  }
+  
+  .navbar .media-icons a {
+    color: green;
+    font-size: 18px;
+    margin: 0 6px;
+  }
+  
+  nav.sticky .media-icons a {
+    color: #FFF;
+  }
+  .nav .menu-btn {
+    display: none;
+  
+  }
+  
+  /* Mobile Navigation */
+  @media (max-width: 750px) {
+    nav .navbar {
+      width: 100%;
+    }
+  
+    nav .navbar .menu {
+      position: fixed;
+      left: -100%;
+      top: 0;
+      background: #0E2431;
+      height: 100vh;
+      max-width: 400px;
+      width: 50%;
+      padding-top: 60px;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.5s ease;
+    }
+  
+    .navbar.active .menu {
+      left: 0;
+    }
+  
+    nav .navbar .menu a {
+      font-size: 23px;
+      display: block;
+      color: #fff;
+      margin: 10px 0;
+    }
+  
+    nav.sticky .menu a:hover {
+      color: green;
+    }
+  
+    nav .navbar .media-icons {
+      display: none;
+    }
+  
+    nav .menu-btn,
+    .navbar .menu .cancel-btn {
+      display: flex;
+    }
+  
+    nav .menu-btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      color: green;
+      font-size: 24px;
+     
+    }
+  
+    nav.sticky .menu-btn {
+      display: flex;
+      color: white;
+    }
+  
+    .navbar .menu .cancel-btn {
+      display: none;
+    }
+  
+    nav .navbar.active .menu-btn,
+    nav.sticky .navbar.active .menu-btn {
+      display: none;
+    }
+  
+    nav .navbar.active .cancel-btn {
+      display: flex;
+    }
+  }
+  

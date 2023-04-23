@@ -1,0 +1,132 @@
+section .left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  section .left img{
+    height: 450px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  section .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  section .topic{
+    color: #0E2431;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 7px;
+   
+  }
+  
+  section .right p{
+    text-align: justify;
+    color: #0E2431;
+    width: 80%;
+  margin-bottom:4vh;
+    
+  }
+  
+  section table {
+    margin-left: 2vh;
+    margin-bottom: 5vh;
+    border-spacing: 0 10px; /* Add vertical spacing between table rows */
+  }
+  
+  section th, section td {
+    padding: 5px; /* Add padding to table cells */
+  }
+  
+  section .interests {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 1rem; /* Add space below the interests section */
+  }
+  
+  section .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Add space between icons */
+  }
+  
+  section .interests p {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Vertically align the text and icons */
+    margin: 0.5vw;
+  }
+  
+    /* Responsive Media Query */
+
+  @media (max-width: 1000px) {
+    .myintro .about-details{
+      justify-content: center;
+      flex-direction: column;
+    }
+    .myintro .about-details .left{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .myintro-details .right{
+      width: 90%;
+      margin: 40px 0;
+    }
+     }
+
+   @media (max-width: 900px) {
+        .myintro .left img{
+          height: 350px;
+          width: 350px;
+        }
+      }
+
+
+      @media (max-width: 750px) {
+      .myintro .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .myintro .left {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+      .myintro .right{
+        width: 100%;
+        margin-right: 0;
+      }
+      .myintro .interests h4 {
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+      
+      .myintro .interests .icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+      }
+    
+    
+    .myintro .interests .icons p {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .myintro .interests .icons p i,
+    .myintro .interests .icons p img {
+      margin-right: 8px;
+    }
+      }
+    

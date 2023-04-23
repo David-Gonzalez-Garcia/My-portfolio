@@ -1,0 +1,17 @@
+.contact{
+    background: #F0F8FF;
+  }
+  .contact .content{
+    padding: 40px 0;
+  }
+  .contact .text{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+
+  @media (max-width: 750px) {
+    .contact .text{
+      width: 100%;
+  }
+   }

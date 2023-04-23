@@ -1,0 +1,87 @@
+.home{
+    height: 80vh;
+    width: 100%;
+    background: url("../../images/background.png") no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .home .home-content{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home .text-one{
+    font-size: 25px;
+    color: #0E2431;
+  }
+  .home .text-two{
+    color: #0E2431;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+  }
+  .home .text-three{
+    font-size: 40px;
+    margin: 5px 0;
+    color: green;
+  }
+  .home .text-four{
+    font-size: 23px;
+    margin: 5px 0;
+    color: #0E2431;
+  }
+  
+  button {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 2rem;
+    border: 1px solid green;
+    color: green;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 2rem;    
+    text-align: center;
+    padding:.7rem;
+    cursor: pointer;
+  }
+  .button1 {
+    margin-right:2vw;
+  }
+  
+  button a{
+    color: black;
+  }
+  
+  button:hover,
+  button:hover a {
+    background-color: green;
+    color: white;
+  }
+
+      /* Responsive Media Query */
+
+
+      @media (max-width: 750px) {
+  .home .text-two{
+    font-size: 65px;
+  }
+  .home .text-three{
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 500px){
+  .home .text-two{
+    font-size: 55px;
+  }
+  .home .text-three{
+    font-size: 33px;
+  }
+   }
