@@ -1,37 +1,93 @@
-
-
 .projects {
-    padding-top: 1vh;
-    padding-bottom:7vh;
-    width: 100%;
-  
-  }
-  .projects .content{
-    padding: 40px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   }
-  .projects .examples {
+  padding-top: 1vh;
+  padding-bottom: 7vh;
+  width: 100%;
+}
+
+.projects .content {
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-and-examples {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.github-projects,
+.examples {
+  width: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
-  
-  .projects p {
-    font-weight: 500;
-  }
-  section .projects img {
+}
+
+.examples {
+  justify-content: center;
+  min-height: 300px;
+}
+
+.projects .examples {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects h2 {
+  margin-bottom: 20px;
+}
+
+.projects p {
+  font-weight: 500;
+}
+
+section .projects img {
   width: 10vw;
   animation: jump 1.5s step-end infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
   }
-    @keyframes jump{
-      0%{ transform:translateY(0); }
-      20%{ transform:translateY(0); }
-      40%{ transform:translateY(-30px); }
-      50%{ transform:translateY(0); }
-      60%{ transform:translateY(-15px); }
-      80%{ transform:translateY(0); }
-      100%{ transform:translateY(0); }
-      }
+  20% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-and-examples {
+    flex-direction: column;
+  }
+
+  .github-projects,
+  .examples {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .github-projects:last-child,
+  .examples:last-child {
+    margin-bottom: 0;
+  }
+}

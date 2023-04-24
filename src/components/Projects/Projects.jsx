@@ -1,29 +1,40 @@
-import React from 'react'
-import "./Projects.css"
-import ProjectsImage from '../../icons/report-document-icon-vector-18383013.jpg'
+import React from 'react';
+import './Projects.css';
+import ProjectsImage from '../../icons/report-document-icon-vector-18383013.jpg';
+import GitHubProjects from './GitHubProjects';
 
 const Projects = () => {
   return (
     <>
-    <section class="projects" id="projects">
-      <div class="content">
-        <div class="title"><span>Projects</span></div>
-        <div class="examples">
-          <img
-            src={ProjectsImage}
-            width="100px"
-            alt=""
-            style={{animation: "jump 1.5s step-end infinite"}}
-          />
-          <p>Coming soon!</p>
+      <section className="projects" id="projects">
+        <div className="content">
+          <div className="title">
+            <span>Projects</span>
+          </div>
+          <div className='projects-and-examples'>
+            <div className="github-projects">
+              <h2>My GitHub Projects</h2>
+              <GitHubProjects />
+            </div>
+            <div className="examples">
+              
+              <img
+                src={ProjectsImage}
+                width="100px"
+                alt=""
+                style={{ animation: 'jump 1.5s step-end infinite' }}
+              />
+              <p>More coming soon!</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="contact">
-      <form action=""></form>
-    </section>
-    </>
-  )
-}
+      </section>
 
-export default Projects
+      <section className="contact">
+        <form action=""></form>
+      </section>
+    </>
+  );
+};
+
+export default Projects;
