@@ -9,7 +9,7 @@ const Contact = () => {
       <div class="text">
         <div class="topic">Have Any Project?</div>
         <p>
-          I am currently looking for an internship opportunity, since it is part of my one year Web Development course and I am at the end of it.s
+          I am currently looking for an internship opportunity, since it is part of my one year Web Development course and I am at the end of it.
         </p>
         <div class="button">
           <button>
