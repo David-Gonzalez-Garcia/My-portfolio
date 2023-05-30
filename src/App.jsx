@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css'
 import Navigation from './components/Navigation/Navigation';
@@ -10,12 +10,32 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import ScrollButton from './components/ScrollButton/ScrollButton.jsx';
 
-
-
 function App() {
+
+  
+  const isDarkModeSupported = window.matchMedia('(prefers-color-scheme: dark)').media !== 'not all';
+const [isDarkMode, setIsDarkMode] = useState(isDarkModeSupported && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+useEffect(() => {
+  if (isDarkModeSupported) {
+    document.body.classList.toggle('dark-mode', isDarkMode);
+  }
+}, [isDarkMode, isDarkModeSupported]);
+
+  useEffect(() => {
+    // Detecta si el dispositivo está en modo oscuro
+    setIsDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches);
+    console.log("Is dark mode detected: ", window.matchMedia('(prefers-color-scheme: dark)').matches);
+  }, []);
+  
+  useEffect(() => {
+    // Agrega o elimina la clase CSS dependiendo del estado de isDarkMode
+    console.log('Adding or removing class...');
+    document.body.classList.toggle('dark-mode', isDarkMode);
+  }, [isDarkMode]);
+
   return (
     <div className="App">
-
       <Navigation />
       <ScrollButton />
       

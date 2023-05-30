@@ -69,6 +69,12 @@ section .content{
     left: 50%;
     transform: translateX(-50%);
   }
+
+  
+ body .dark-mode {
+    background-color: #333;
+    color: #fff;
+  } 
   
   /* Responsive Media Query */
   @media (max-width: 1190px) {

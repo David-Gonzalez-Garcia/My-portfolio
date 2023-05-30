@@ -1,18 +1,18 @@
 import './About.css';
-import React from 'react'
-import davidPic from '../../images/david_pic.jpeg'
-import boulderingIcon from '../../icons/climbing-1528278-1291475-3378983757.png'
+import React from 'react';
+import davidPic from '../../images/david_pic.jpeg';
+import boulderingIcon from '../../icons/climbing-1528278-1291475-3378983757.png';
 
 const About = () => {
   return (
-    <section class="myintro" id="intro">
-      <div class="content">
-        <div class="title"><span>My intro</span></div>
-        <div class="left">
-          <img src={davidPic} alt="" width="50" height="200px" />
+    <section className="myintro" id="intro">
+      <div className="content">
+        <div className="title"><span>My intro</span></div>
+        <div className="left">
+          <img src={davidPic} alt="" width="50" height="200px" className="david-pic" />
         </div>
-        <div class="right">
-          <div class="topic">About Me</div>
+        <div className="right">
+          <div className="topic">About Me</div>
           <p>
             Innovative and goal-focused professional. I am studying to become a
             full-stack web developer, after having worked in completely
@@ -21,46 +21,48 @@ const About = () => {
             into the Web Development world.
           </p>
           <table>
-            <tr>
-              <td>
-                <i class="fa-regular fa-user fa-sm" style={{color: "green"}}></i>
-              </td>
-              <th>Name</th>
-              <td>David González García</td>
-            </tr>
-            <tr>
-              <td>
-                <i
-                  class="fa-solid fa-phone-flip fa-sm"
-                  style={{color: "green"}}
-                ></i>
-              </td>
-              <th>Phone</th>
-              <td>+34665035127</td>
-            </tr>
-            <tr>
-              <td>
-                <i
-                  class="fa-regular fa-envelope fa-sm"
-                  style={{color: "green"}}
-                ></i>
-              </td>
-              <th>Email</th>
-              <td>davidgonzalez@gmx.com</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>
+                  <i className="fa-regular fa-user fa-sm" style={{color: "green"}}></i>
+                </td>
+                <th>Name</th>
+                <td>David González García</td>
+              </tr>
+              <tr>
+                <td>
+                  <i
+                    className="fa-solid fa-phone-flip fa-sm"
+                    style={{color: "green"}}
+                  ></i>
+                </td>
+                <th>Phone</th>
+                <td>+34665035127</td>
+              </tr>
+              <tr>
+                <td>
+                  <i
+                    className="fa-regular fa-envelope fa-sm"
+                    style={{color: "green"}}
+                  ></i>
+                </td>
+                <th>Email</th>
+                <td>davidgonzalez@gmx.com</td>
+              </tr>
+            </tbody>
           </table>
-          <div class="interests">
+          <div className="interests">
             <h4>My Interests</h4>
-            <div class="icons">
-              <p><i class="fas fa-film" style={{color: "green"}}></i>Cinema</p>
+            <div className="icons">
+              <p><i className="fas fa-film" style={{color: "green"}}></i>Cinema</p>
               <p>
                 <i
-                  class="fa-solid fa-apple-whole fa fa-lg"
+                  className="fa-solid fa-apple-whole fa fa-lg"
                   style={{color: "green"}}
                 ></i>
                 Nutrition
               </p>
-              <p><i class="fas fa-dumbbell" style={{color: "green"}}></i>Fitness</p>
+              <p><i className="fas fa-dumbbell" style={{color: "green"}}></i>Fitness</p>
               <p>
                 <img
                   src={boulderingIcon}
@@ -78,4 +80,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About;
